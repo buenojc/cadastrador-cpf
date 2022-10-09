@@ -47,10 +47,7 @@ if (!eValido) {
   process.exit();
 }
 
-const pessoa = {
-  nome: nomeDigitado,
-  cpf: cpfDigitado,
-};
 
-salvarCpfJson(pessoa);
+
+salvarCpfJson(cpfDigitado, nomeDigitado);
 
