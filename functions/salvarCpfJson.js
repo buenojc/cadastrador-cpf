@@ -8,7 +8,7 @@ function salvarCpfJson( cpf, nome ){
         cpf: cpf,
       };
     pessoas.push(pessoa)
-    fs.writeFileSync('./pessoas.json', JSON.stringify(pessoas))
+    fs.writeFileSync('./pessoas.json', JSON.stringify(pessoas, null, 3))
     console.log("Usuário Salvo.");
 
 }
